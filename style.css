@@ -55,18 +55,18 @@ body {
 }
 
 .container {
-    margin: 4% 8% 4% 8%;
+    margin: 3% 8% 3% 8%;
 }
 
 /* box */
 .box {
-    box-sizing: border-box;
     margin: 0;
-    min-width: 0;
     background-color: #e0e6ed;
     padding: 16px;
     border-radius: 12px;
-    padding: 16px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-x: auto;
 }
 
 /*colors */
@@ -164,10 +164,21 @@ body {
 .centre {
     text-align: center;
     background-color: var(--snow);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
 }
 
 .centre h1 {
     margin: 0 !important;
+}
+
+.line-break {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: block;
+}
+.footer {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1rem;
 }
