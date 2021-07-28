@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;800;900&display=swap');
+
+html, 
+body {
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: none;
+    padding: none;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 1rem;
+}
+
+@media screen and (min-width: 32em) {
+    h1 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    h1 {
+        font-size: 64px;
+    }
+}
+
+h2 { 
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+h3 {
+    font-size: 1.9rem;
+    margin: 1rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 4% 8% 4% 8%;
+}
+
+/* box */
+.box {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    background-color: #e0e6ed;
+    padding: 16px;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+/*colors */
+
+:root {
+    --darker: #121217;
+    --dark: #17171D;
+    --darkless: #252429;
+    --black: #1F2D3D;
+    --steel: #273444;
+    --slate: #3C4858;
+    --muted: #8492A6;
+    --smoke: #E0E6ED;
+    --snow: #F9FAFC;
+    --white: #FFFFFF;
+    --red: #EC3750;
+    --orange: #FF8C37;
+    --yellow: #F1C40F;
+    --green: #33D6A6;
+    --cyan: #5BC0DE;
+    --blue: #338EDA;
+    --purple: #A633D6;
+    --text: #FFFFFF;
+    --background: #17171D;
+    --elevated: #252429;
+    --sheet: #252429;
+    --sunken: #121217;
+    --border: #252429;
+    --primary: #EC3750;
+    --secondary: #8492A6;
+    --accent: #5BC0DE;
+
+}
+
+.all-color-box {
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.color-box {
+    width: 128px;
+    height: 128px;
+    margin: 12px;
+    border-radius: 5px;
+}
+
+.color-box p {
+    color: #fff;
+    text-align: center;
+    margin-top: 43%;
+}
+
+/* buttons */
+.button-fill {
+    color: var(--white);
+    font-size: 1rem;
+    background-color: var(--primary);
+    padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 900;
+}
+
+.lg-button-fill {
+    color: var(--white);
+    font-size: 1rem;
+    background-color: var(--primary);
+    padding: 20px 30px 20px 30px;
+    border: none;
+    border-radius: 100px;
+    font-weight: 900;
+}
+
+.button-outline {
+    color: var(--primary);
+    font-size: 1rem;
+    background-color: transparent;
+    padding: 15px 20px 15px 20px;
+    border: 3px solid var(--primary);
+    border-radius: 30px;
+    font-weight: 900;
+}
+
+.lg-button-outline {
+    color: var(--primary);
+    font-size: 1rem;
+    background-color: transparent;
+    padding: 20px 30px 20px 30px;
+    border: 3px solid var(--primary);
+    border-radius: 40px;
+    font-weight: 900;
+}
+/* additional styling */
+
+.centre {
+    text-align: center;
+    background-color: var(--snow);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.centre h1 {
+    margin: 0 !important;
+}
