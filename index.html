@@ -1,235 +1,110 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Hack Club Theme</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="standard.css" />
+    <link rel="stylesheet" href="fonts.css" />
+  </head>
 
-<body>
-        <div class="centre">
-            <h1>Hack Club Theme</h1>
-            <h4>Now in plain CSS!</h4>
-        </div>
-    <div class="container">
-        <a class="line-break"></a>
-        <h3>Text</h3>
-        <div class="box">
-            <h1>Ultratitle ( h1 )</h1>
-            <h2>Headline ( h2 )</h2>
-            <h3>Heading ( h3 )</h3>
-            <h4>Subheadline ( h4 )</h4>
-            <h5>Caption ( h5 )</h5>
-            <p>paragraph</p>
-        </div>
-        <a class="line-break"></a>
-        <h3>Colors</h3>
-        <p>To use the colors, just add <a style="background-color: var(--smoke); padding: 2px 5px 2px 5px; border-radius: 3px;">var(--color)</a> <a style="color: var(--red)">eg. color: var(--red)</a></p>
-        <div class="all-color-box">
-            <div class="color-box" style="background-color: var(--darker)"><p>darker</p></div>
-            <div class="color-box" style="background-color: var(--dark)"><p>dark</p></div>
-            <div class="color-box" style="background-color: var(--darkless)"><p>darkless</p></div>
-            <div class="color-box" style="background-color: var(--black)"><p>black</p></div>
-            <div class="color-box" style="background-color: var(--steel)"><p>steel</p></div>
-            <div class="color-box" style="background-color: var(--slate)"><p>slate</p></div>
-            <div class="color-box" style="background-color: var(--muted)"><p>muted</p></div>
-            <div class="color-box" style="background-color: var(--smoke)"><p>smoke</p></div>
-            <div class="color-box" style="background-color: var(--snow)"><p style="color: var(--darker)">snow</p></div>
-            <div class="color-box" style="background-color: var(--white)"><p style="color: var(--darker)">white</p></div>
-            <div class="color-box" style="background-color: var(--red)"><p>red</p></div>
-            <div class="color-box" style="background-color: var(--orange)"><p>orange</p></div>
-            <div class="color-box" style="background-color: var(--yellow)"><p>yellow</p></div>
-            <div class="color-box" style="background-color: var(--green)"><p>green</p></div>
-            <div class="color-box" style="background-color: var(--blue)"><p>blue</p></div>
-            <div class="color-box" style="background-color: var(--purple)"><p>purple</p></div>
-            <div class="color-box" style="background-color: var(--text)"><p style="color: var(--darker)">text</p></div>
-            <div class="color-box" style="background-color: var(--background)"><p>background</p></div>
-            <div class="color-box" style="background-color: var(--elevated)"><p>elevated</p></div>
-            <div class="color-box" style="background-color: var(--sheet)"><p>sheet</p></div>
-            <div class="color-box" style="background-color: var(--sunken)"><p>sunken</p></div>
-            <div class="color-box" style="background-color: var(--border)"><p>border</p></div>
-            <div class="color-box" style="background-color: var(--primary)"><p>primary</p></div>
-            <div class="color-box" style="background-color: var(--secondary)"><p>secondary</p></div>
-            <div class="color-box" style="background-color: var(--accent)"><p>accent</p></div>
-        </div>
-        <br>
-        <h3>Buttons</h3>
-        <button class="button-fill">button-fill</button>
-        <button class="lg-button-fill">lg-button-fill</button>
-        <button class="button-outline">button-outline</button>
-        <button class="lg-button-outline">lg-button-outline</button>
-        <a class="line-break"></a>
-        <h3>To use, copy the following css into your stylesheet</h3>
-        <div class="box">
-            <pre>
-                <code>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800;900&display=swap');
-
-    html, 
-    body {
-        font-family: 'Phantom Sans','Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin: none;
-        padding: none;
-        font-weight: 400;
-    }
-
-    h1 {
-        font-size: 32px;
-        font-weight: 800;
-        margin: 0;
-    }
-
-    @media screen and (min-width: 32em) {
-        h1 {
-            font-size: 48px;
-        }
-    }
-
-    @media screen and (min-width: 48em) {
-    h1 {
-            font-size: 64px;
-        }
-    }
-
-    h2 { 
-        font-size: 32px;
-        margin: 0;
-    }
-
-    h3 {
-        font-size: 28px;
-        margin: 0;
-    }
-
-    h4 {
-        font-size: 20px;
-        margin: 0;
-    }
-
-    h5 {
-        font-size: 16px;
-        margin: 0;
-    }
-
-    p {
-        font-size: 1rem;
-        margin: 0;
-    }
-
-    body {
-        margin: 0;
-    }
-
-    .container {
-        margin: 3% 8% 3% 8%;
-    }
-
-    /* box */
-    .box {
-        margin: 0;
-        background-color: #e0e6ed;
-        padding: 16px;
-        border-radius: 12px;
-        word-wrap: break-word;
-        white-space: pre-wrap;
-        overflow-x: auto;
-    }
-
-    /*colors */
-
-    :root {
-        --darker: #121217;
-        --dark: #17171D;
-        --darkless: #252429;
-        --black: #1F2D3D;
-        --steel: #273444;
-        --slate: #3C4858;
-        --muted: #8492A6;
-        --smoke: #E0E6ED;
-        --snow: #F9FAFC;
-        --white: #FFFFFF;
-        --red: #EC3750;
-        --orange: #FF8C37;
-        --yellow: #F1C40F;
-        --green: #33D6A6;
-        --cyan: #5BC0DE;
-        --blue: #338EDA;
-        --purple: #A633D6;
-        --text: #FFFFFF;
-        --background: #17171D;
-        --elevated: #252429;
-        --sheet: #252429;
-        --sunken: #121217;
-        --border: #252429;
-        --primary: #EC3750;
-        --secondary: #8492A6;
-        --accent: #5BC0DE;
-
-    }
-
-    .all-color-box {
-        font-size: 12px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .color-box {
-        width: 128px;
-        height: 128px;
-        margin: 12px;
-        border-radius: 5px;
-    }
-
-    .color-box p {
-        color: #fff;
-        text-align: center;
-        margin-top: 43%;
-    }
-
-    /* buttons */
-    .button-fill {
-        color: var(--white);
-        font-size: 1rem;
-        background-color: var(--primary);
-        padding: 15px 20px 15px 20px;
-        border: none;
-        border-radius: 30px;
-        font-weight: 900;
-    }
-
-    .lg-button-fill {
-        color: var(--white);
-        font-size: 1rem;
-        background-color: var(--primary);
-        padding: 20px 30px 20px 30px;
-        border: none;
-        border-radius: 100px;
-        font-weight: 900;
-    }
-
-    .button-outline {
-        color: var(--primary);
-        font-size: 1rem;
-        background-color: transparent;
-        padding: 15px 20px 15px 20px;
-        border: 3px solid var(--primary);
-        border-radius: 30px;
-        font-weight: 900;
-    }
-
-    .lg-button-outline {
-        color: var(--primary);
-        font-size: 1rem;
-        background-color: transparent;
-        padding: 20px 30px 20px 30px;
-        border: 3px solid var(--primary);
-        border-radius: 40px;
-        font-weight: 900;
-    }
-                </code>
-            </pre>
-        </div>
-        <p class="footer">source:<a href="https://github.com/hackclub/css-theme">github</a></p>
+  <body>
+    <div class="centre">
+      <h1>Hack Club CSS Theme</h1>
+      <a class="pill pill2" style="margin-right: 8px" href="https://github.com/hackclub/css-theme" target="_blank">GitHub</a>
+      <a class="pill" href="/standard.css"  style="margin-right: 8px">Base Theme</a>
+      <a class="pill pill2" href="/fonts.css" target="_blank">Fonts (HQ-only)</a>
     </div>
-</body>
+    <div class="container">
+      <a class="line-break"></a>
+      <div class="box">
+        <h1>Ultratitle (h1)</h1>
+        <h2>Headline (h2)</h2>
+        <h3>Heading (h3)</h3>
+        <h4>Subheadline (h4)</h4>
+        <h5>Caption (h5)</h5>
+        <p>paragraph</p>
+      </div>
+      <br />
+      <button class="button-fill">.button-fill</button>
+      <button class="lg-button-fill">.lg-button-fill</button>
+      <button class="button-outline">.button-outline</button>
+      <button class="lg-button-outline">.lg-button-outline</button>
+      <div class="all-color-box">
+        <div class="color-box" style="background-color: var(--darker)">
+          <p>var(--darker)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--dark)">
+          <p>var(--dark)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--darkless)">
+          <p>var(--darkless)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--black)">
+          <p>var(--black)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--steel)">
+          <p>var(--steel)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--slate)">
+          <p>var(--slate)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--muted)">
+          <p>var(--muted)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--smoke)">
+          <p style="color: var(--darker)">var(--smoke)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--snow)">
+          <p style="color: var(--darker)">var(--snow)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--white)">
+          <p style="color: var(--darker)">var(--white)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--red)">
+          <p>var(--red)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--orange)">
+          <p>var(--orange)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--yellow)">
+          <p>var(--yellow)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--green)">
+          <p>var(--green)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--blue)">
+          <p>var(--blue)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--purple)">
+          <p>var(--purple)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--text)">
+          <p style="color: var(--darker)">var(--text)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--elevated)">
+          <p>var(--elevated)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--sheet)">
+          <p>var(--sheet)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--sunken)">
+          <p>var(--sunken)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--border)">
+          <p>var(--border)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--primary)">
+          <p>var(--primary)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--secondary)">
+          <p>var(--secondary)</p>
+        </div>
+        <div class="color-box" style="background-color: var(--accent)">
+          <p>var(--accent)</p>
+        </div>
+      </div>
+      <p class="footer"></p>
+    </div>
+  </body>
 </html>

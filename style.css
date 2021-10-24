@@ -1,185 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800;900&display=swap');
-
-html, 
-body {
-    font-family: 'Phantom Sans', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: none;
-    padding: none;
-    font-weight: 400;
-}
-
-h1 {
-    font-size: 32px;
-    font-weight: 800;
-    margin: 0;
-}
-
-@media screen and (min-width: 32em) {
-    h1 {
-        font-size: 48px;
-    }
-}
-
-@media screen and (min-width: 48em) {
-h1 {
-        font-size: 64px;
-    }
-}
-
-h2 { 
-    font-size: 32px;
-    margin: 0;
-}
-
-h3 {
-    font-size: 28px;
-    margin: 0;
-}
-
-h4 {
-    font-size: 20px;
-    margin: 0;
-}
-
-h5 {
-    font-size: 16px;
-    margin: 0;
-}
-
-p {
-    font-size: 1rem;
-    margin: 0;
-}
-
-body {
-    margin: 0;
-}
-
-.container {
-    margin: 3% 8% 3% 8%;
-}
-
-/* box */
-.box {
-    margin: 0;
-    background-color: #e0e6ed;
-    padding: 16px;
-    border-radius: 12px;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    overflow-x: auto;
-}
-
-/*colors */
-
-:root {
-    --darker: #121217;
-    --dark: #17171D;
-    --darkless: #252429;
-    --black: #1F2D3D;
-    --steel: #273444;
-    --slate: #3C4858;
-    --muted: #8492A6;
-    --smoke: #E0E6ED;
-    --snow: #F9FAFC;
-    --white: #FFFFFF;
-    --red: #EC3750;
-    --orange: #FF8C37;
-    --yellow: #F1C40F;
-    --green: #33D6A6;
-    --cyan: #5BC0DE;
-    --blue: #338EDA;
-    --purple: #A633D6;
-    --text: #FFFFFF;
-    --background: #17171D;
-    --elevated: #252429;
-    --sheet: #252429;
-    --sunken: #121217;
-    --border: #252429;
-    --primary: #EC3750;
-    --secondary: #8492A6;
-    --accent: #5BC0DE;
-
-}
+/*colors and shadows! */
 
 .all-color-box {
-    font-size: 12px;
-    display: flex;
-    flex-wrap: wrap;
+  font-size: 12px;
+  display: flex;
+  margin-left: -12px;
+  flex-wrap: wrap;
 }
 .color-box {
-    width: 128px;
-    height: 128px;
-    margin: 12px;
-    border-radius: 5px;
+  width: 128px;
+  height: 128px;
+  margin: 12px;
+  border-radius: 5px;
+  box-shadow: var(--card-shadow);
 }
 
 .color-box p {
-    color: #fff;
-    text-align: center;
-    margin-top: 43%;
+  color: #fff;
+  text-align: center;
+  margin-top: 43%;
 }
 
-/* buttons */
-.button-fill {
-    color: var(--white);
-    font-size: 1rem;
-    background-color: var(--primary);
-    padding: 15px 20px 15px 20px;
-    border: none;
-    border-radius: 30px;
-    font-weight: 900;
-}
-
-.lg-button-fill {
-    color: var(--white);
-    font-size: 1rem;
-    background-color: var(--primary);
-    padding: 20px 30px 20px 30px;
-    border: none;
-    border-radius: 100px;
-    font-weight: 900;
-}
-
-.button-outline {
-    color: var(--primary);
-    font-size: 1rem;
-    background-color: transparent;
-    padding: 15px 20px 15px 20px;
-    border: 3px solid var(--primary);
-    border-radius: 30px;
-    font-weight: 900;
-}
-
-.lg-button-outline {
-    color: var(--primary);
-    font-size: 1rem;
-    background-color: transparent;
-    padding: 20px 30px 20px 30px;
-    border: 3px solid var(--primary);
-    border-radius: 40px;
-    font-weight: 900;
-}
 /* additional styling */
 
 .centre {
-    text-align: center;
-    background-color: var(--snow);
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+  text-align: center;
+  background-color: var(--red);
+  color: var(--white);
+  padding-top: 8vh;
+  padding-bottom: 8vh;
 }
 
 .centre h1 {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 .line-break {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: block;
 }
 .footer {
-    text-align: center;
-    font-weight: 700;
-    margin-top: 1rem;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.pill {
+  background: var(--white);
+  border-radius: 16px;
+  color: var(--sunken);
+  padding: 8px 16px;
+  margin-top: 8px;
+  display: inline-block;
+  font-weight: 800;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: var(--card-shadow);
+  text-decoration: none;
+}
+.pill:hover{
+    transform: rotate(2deg);
+    box-shadow: var(--elevated-shadow);
+}
+.pill2:hover{
+    transform: rotate(-2deg);
+    box-shadow: var(--elevated-shadow);
 }
