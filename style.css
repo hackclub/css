@@ -20,6 +20,19 @@
   margin-top: 43%;
 }
 
+/* Container examples */
+
+.container-demo-styles {
+  border-style: dashed;
+  border-color: var(--smoke);
+  border-radius: 5px;
+  border-width: 3px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 /* additional styling */
 
 .centre {
@@ -57,11 +70,44 @@
   box-shadow: var(--card-shadow);
   text-decoration: none;
 }
-.pill:hover{
-    transform: rotate(2deg);
-    box-shadow: var(--elevated-shadow);
+.pill:hover {
+  transform: rotate(2deg);
+  box-shadow: var(--elevated-shadow);
 }
-.pill2:hover{
-    transform: rotate(-2deg);
-    box-shadow: var(--elevated-shadow);
+.pill2:hover {
+  transform: rotate(-2deg);
+  box-shadow: var(--elevated-shadow);
+}
+
+/* utility classes */
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.leading-loose {
+  line-height: 2;
 }

@@ -9,13 +9,38 @@
   </head>
 
   <body>
+    <!-- Page Header -->
     <div class="centre">
       <h1>Hack Club CSS Theme</h1>
-      <a class="pill pill2" style="margin-right: 8px" href="https://github.com/hackclub/css-theme" target="_blank">GitHub</a>
-      <a class="pill" href="/standard.css"  style="margin-right: 8px">Base Theme</a>
-      <a class="pill pill2" href="/fonts.css" target="_blank">Fonts (HQ-only)</a>
+      <a
+        class="pill pill2"
+        style="margin-right: 8px"
+        href="https://github.com/hackclub/css-theme"
+        target="_blank"
+        >GitHub</a
+      >
+      <a class="pill" href="/standard.css" style="margin-right: 8px"
+        >Base Theme</a
+      >
+      <a class="pill pill2" href="/fonts.css" target="_blank"
+        >Fonts (HQ-only)</a
+      >
     </div>
-    <div class="container">
+
+    <main class="container">
+      <!-- Containers-->
+      <h2 class="leading-loose">Containers</h2>
+      <div class="container">
+        <div class="container container-demo-styles text-center">
+          .container
+        </div>
+        <div class="wide container-demo-styles text-center">.wide</div>
+        <div class="copy container-demo-styles text-center">.copy</div>
+        <div class="narrow container-demo-styles text-center">.narrow</div>
+      </div>
+
+      <!-- Text -->
+      <h2 class="leading-loose">Text</h2>
       <a class="line-break"></a>
       <div class="box">
         <h1>Ultratitle (h1)</h1>
@@ -25,11 +50,16 @@
         <h5>Caption (h5)</h5>
         <p>paragraph</p>
       </div>
-      <br />
+
+      <!-- Buttons -->
+      <h2 class="leading-loose">Buttons</h2>
       <button class="button-fill">.button-fill</button>
       <button class="lg-button-fill">.lg-button-fill</button>
       <button class="button-outline">.button-outline</button>
       <button class="lg-button-outline">.lg-button-outline</button>
+
+      <!-- Colors -->
+      <h2 class="leading-loose">Colors</h2>
       <div class="all-color-box">
         <div class="color-box" style="background-color: var(--darker)">
           <p>var(--darker)</p>
@@ -105,6 +135,6 @@
         </div>
       </div>
       <p class="footer"></p>
-    </div>
+    </main>
   </body>
 </html>

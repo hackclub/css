@@ -1,6 +1,7 @@
 html,
 body {
-  font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
   margin: none;
   padding: none;
   font-weight: 400;
@@ -55,10 +56,6 @@ body {
 
 /* boxes */
 
-.container {
-  margin: 3% 8% 3% 8%;
-}
-
 .box {
   margin: 0;
   background-color: #e0e6ed;
@@ -66,6 +63,34 @@ body {
   border-radius: 12px;
   word-wrap: break-word;
   overflow-x: auto;
+}
+
+/* Containers */
+
+@media screen and (min-width: 48em) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wide {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .copy {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .narrow {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /*colors and shadows! */
@@ -98,9 +123,11 @@ body {
   --secondary: #8492a6;
   --accent: #5bc0de;
   --text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.125);
-  --small-shadow: 0 1px 2px rgba(0, 0, 0, 0.0625), 0 2px 4px rgba(0, 0, 0, 0.0625);
+  --small-shadow: 0 1px 2px rgba(0, 0, 0, 0.0625),
+    0 2px 4px rgba(0, 0, 0, 0.0625);
   --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.125);
-  --elevated-shadow: 0 1px 2px rgba(0, 0, 0, 0.0625), 0 8px 12px rgba(0, 0, 0, 0.125);
+  --elevated-shadow: 0 1px 2px rgba(0, 0, 0, 0.0625),
+    0 8px 12px rgba(0, 0, 0, 0.125);
 }
 
 /* buttons */
