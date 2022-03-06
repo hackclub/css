@@ -96,6 +96,13 @@ body {
   text-rendering: optimizeLegibility;
   font-smooth: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: var(--text);
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .monospace {
@@ -154,21 +161,27 @@ body {
   margin-bottom: var(--spacing-2);
 }
 
+.lead {
+  font-weight: var(--font-weight-body);
+}
+
 .caption {
   color: var(--muted);
-  font-weight: medium;
+  font-weight: var(--font-weight-body);
   letter-spacing: var(--letter-spacing-headline);
   line-height: var(--line-height-caption);
 }
 
-.pill-badge {
+.pill {
   border-radius: var(--radii-circle);
   padding-left: var(--spacing-3);
   padding-right: var(--spacing-3);
   padding-top: var(--spacing-1);
   padding-bottom: var(--spacing-1);
-  font-size: var(--font-1);
+  font-size: var(--font-2);
   background: var(--primary);
+  color: var(--background);
+  font-weight: var(--font-weight-bold);
 }
 
 .outline-badge {
@@ -177,8 +190,9 @@ body {
   padding-right: var(--spacing-3);
   padding-top: var(--spacing-1);
   padding-bottom: var(--spacing-1);
-  font-size: var(--font-1);
+  font-size: var(--font-2);
   background: none;
+  color: var(--muted);
   border: 1px solid currentcolor;
   font-weight: var(--font-weight-body);
 }
@@ -222,7 +236,7 @@ button:hover {
 }
 
 button.lg {
-  font-size: var(--font-3);
+  font-size: var(--font-3)!important;
   line-height: var(--line-height-title);
   padding-left: var(--spacing-4);
   padding-right: var(--spacing-4);
@@ -255,6 +269,7 @@ button.cta {
 
 .card.sunken {
   background: var(--sunken);
+  box-shadow: none;
 }
 
 .card.interactive {
@@ -275,8 +290,13 @@ select {
   background: var(--elevated);
   color: var(--text);
   font-family: inherit;
-  border-radius: var(--radii-default);
+  border-radius: var(--radii-small);
   border: 0;
+  font-size: inherit;
+  padding: var(--spacing-2);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 input::-webkit-input-placeholder,
@@ -297,13 +317,23 @@ select[type="search"]::-webkit-search-decoration {
   display: none;
 }
 
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+}
+
 label {
   color: var(--text);
   display: flex;
   flex-direction: column;
   text-align: left;
   line-height: var(--line-height-caption);
-  font-size: var(--font-2);
+  font-size: var(--font-3);
+}
+
+label.horizontal {
+  display: flex;
 }
 
 .slider {
@@ -408,6 +438,7 @@ pre {
   background: var(--sunken);
   overflow: auto;
   border-radius: var(--radii-default);
+  white-space: inherit;
 }
 
 pre > code {
@@ -433,13 +464,13 @@ code {
 
 p > code,
 li > code {
-  color: var(--purple);
+  color: var(--blue);
   font-size: 0.875em;
 }
 
 p > a > code,
 li > a > code {
-  color: var(--red);
+  color: var(--blue);
   font-size: 0.875em;
 }
 

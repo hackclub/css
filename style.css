@@ -1,6 +1,6 @@
 /*colors and shadows! */
 
-.all-color-box {
+.color-boxes {
   font-size: 12px;
   display: flex;
   margin-left: -12px;
@@ -43,25 +43,4 @@
   text-align: center;
   font-weight: 700;
   margin-top: 1rem;
-}
-
-.pill {
-  background: var(--white);
-  border-radius: 16px;
-  color: var(--sunken);
-  padding: 8px 16px;
-  margin-top: 8px;
-  display: inline-block;
-  font-weight: 800;
-  transition: transform 0.2s ease-in-out;
-  box-shadow: var(--card-shadow);
-  text-decoration: none;
-}
-.pill:hover{
-    transform: rotate(2deg);
-    box-shadow: var(--elevated-shadow);
-}
-.pill2:hover{
-    transform: rotate(-2deg);
-    box-shadow: var(--elevated-shadow);
 }
