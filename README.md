@@ -1,17 +1,7 @@
 # Hack Club CSS
 
-Get the latest version:
+[Hack Club](https://hackclub.com/)'s [theme](https://theme.hackclub.com) implemented as CSS.
 
-```
-https://cdn.jsdelivr.net/gh/hackclub/css@main/standard.min.css
-https://cdn.jsdelivr.net/gh/hackclub/css@main/fonts.min.css
-```
+Get the latest version: [`https://css.hackclub.com/theme.css`](https://css.hackclub.com/theme.css)
 
-Get a specfic commit:
-
-```
-https://cdn.jsdelivr.net/gh/hackclub/css@dc8f497/standard.min.css
-https://cdn.jsdelivr.net/gh/hackclub/css@dc8f497/fonts.min.css
-```
-
-Community made variant of the Hack Club Theme for plain CSS.
+Get the latest minified version: [`https://css.hackclub.com/theme.min.css`](https://css.hackclub.com/theme.min.css)
