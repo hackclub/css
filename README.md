@@ -7,11 +7,11 @@ https://cdn.jsdelivr.net/gh/hackclub/css@main/standard.min.css
 https://cdn.jsdelivr.net/gh/hackclub/css@main/fonts.min.css
 ```
 
-Get a specfic version:
+Get a specfic commit:
 
 ```
-https://cdn.jsdelivr.net/gh/hackclub/css@1.0/standard.min.css
-https://cdn.jsdelivr.net/gh/hackclub/css@1.0/fonts.min.css
+https://cdn.jsdelivr.net/gh/hackclub/css@dc8f497/standard.min.css
+https://cdn.jsdelivr.net/gh/hackclub/css@dc8f497/fonts.min.css
 ```
 
 Community made variant of the Hack Club Theme for plain CSS.
