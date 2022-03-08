@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Hack Club CSS</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="standard.css" />
+    <link rel="stylesheet" href="theme.css" />
     <link rel="stylesheet" href="fonts.css" />
 
     <meta property="og:title" content="Hack Club CSS" />
@@ -53,9 +52,17 @@
           padding-top: 8px;
         "
       >
-        <a class="no-styles-a" href="https://github.com/hackclub/css-theme">GitHub</a>
-        <a class="no-styles-a" href="https://css-theme.hackclub.dev/standard.css">CSS File</a>
-        <a class="no-styles-a" href="https://css-theme.hackclub.dev/fonts.css">Fonts (HQ-only)</a>
+        <a class="no-styles-a" href="https://github.com/hackclub/css-theme"
+          >GitHub</a
+        >
+        <a
+          class="no-styles-a"
+          href="https://css-theme.hackclub.dev/standard.css"
+          >CSS File</a
+        >
+        <a class="no-styles-a" href="https://css-theme.hackclub.dev/fonts.css"
+          >Fonts (HQ-only)</a
+        >
       </p>
     </div>
     <div
@@ -309,5 +316,38 @@
         </div>
       </div>
     </div>
+    <style>
+      .color-boxes {
+        font-size: 12px;
+        display: flex;
+        margin-left: -12px;
+        flex-wrap: wrap;
+      }
+      .color-box {
+        width: 128px;
+        height: 128px;
+        margin: 12px;
+        border-radius: 5px;
+        box-shadow: var(--card-shadow);
+      }
+
+      .color-box p {
+        color: #fff;
+        text-align: center;
+        margin-top: 43%;
+      }
+
+      .no-styles-a {
+        color: inherit;
+        text-decoration: none;
+        text-underline-position: under;
+      }
+
+      .no-styles-a:hover {
+        color: var(--primary);
+        text-decoration: none;
+        text-underline-position: under;
+      }
+    </style>
   </body>
 </html>
