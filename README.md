@@ -14,8 +14,8 @@ Get the latest minified theme stylesheet: [`css.hackclub.com/theme.min.css`](htt
 
 ### Archives
 
-To access the stylesheet at commit ID `d0888dc` use [`css.hackclub.com/d0888dc/theme.css`](https://css.hackclub.com/d0888dc/theme.css). 
+To access `theme.css` at commit ID `d0888dc` use [`css.hackclub.com/d0888dc/theme.css`](https://css.hackclub.com/d0888dc/theme.css). 
 
-Similarly, to access the stylesheet at commit SHA `cbe01ca9a4de7bc7a5b1048d887287dfedba0a07` use [`css.hackclub.com/cbe01ca9a4de7bc7a5b1048d887287dfedba0a07/theme.css`](https://css.hackclub.com/cbe01ca9a4de7bc7a5b1048d887287dfedba0a07/theme.css). 
+Similarly, to access `fonts.min.css` at commit SHA `cbe01ca9a4de7bc7a5b1048d887287dfedba0a07` use [`css.hackclub.com/cbe01ca9a4de7bc7a5b1048d887287dfedba0a07/fonts.min.css`](https://css.hackclub.com/cbe01ca9a4de7bc7a5b1048d887287dfedba0a07/fonts.min.css). 
 
 This can be done for every commit in this repository.
