@@ -8,19 +8,13 @@ To run the site locally, follow the steps below:
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/hackclub/css.git && cd css/docs/
+git clone https://github.com/hackclub/css.git
 ```
 
-1. Install dependencies:
+2. Start up a server (or open the `index.html` file in your browser):
 
 ```sh
-yarn
-```
-
-1. Start running the dev server:
-
-```sh
-yarn dev
+python -m SimpleHTTPServer
 ```
 
 Open your browser to [http://localhost:3000](http://localhost:3000) to see the result!
