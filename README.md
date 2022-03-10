@@ -7,9 +7,10 @@
 To run the site locally, follow the steps below:
 
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/hackclub/css.git && cd css/docs/
-   ```
+```sh
+git clone https://github.com/hackclub/css.git && cd css/docs/
+```
+
 1. Install dependencies:
 
 ```sh
