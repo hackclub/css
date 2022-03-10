@@ -1,1 +1,351 @@
-../../index.html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hack Club CSS</title>
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="fonts.css" />
+
+    <meta property="og:title" content="Hack Club CSS" />
+    <meta name="twitter:title" content="Hack Club CSS" />
+    <meta
+      name="description"
+      content="The Hack Club theme, packaged as plain CSS."
+    />
+    <meta
+      property="og:description"
+      content="The Hack Club theme, packaged as plain CSS."
+    />
+    <meta
+      name="twitter:description"
+      content="The Hack Club theme, packaged as plain CSS."
+    />
+    <meta name="theme-color" content="#ec3750" />
+    <meta name="msapplication-TileColor" content="#ec3750" />
+  </head>
+
+  <body>
+    <div
+      style="
+        background: var(--sheet);
+        text-align: center;
+        padding-top: var(--spacing-5);
+        padding-bottom: var(--spacing-4);
+      "
+    >
+      <h1 class="title" style="color: var(--primary)">Hack Club CSS</h1>
+      <p class="headline">
+        <a href="https://hackclub.com">Hack Club’s</a> theme implemented as CSS.
+      </p>
+      <p
+        class="subtitle"
+        style="
+          font-weight: var(--font-weight-bold);
+          color: var(--muted);
+          margin-bottom: var(--spacing-4);
+          display: flex;
+          gap: 32px;
+          height: 30px;
+          justify-content: center;
+          align-items: center;
+          letter-spacing: 0;
+          padding-top: 8px;
+        "
+      >
+        <a class="no-styles-a" href="https://github.com/hackclub/css-theme"
+          >GitHub</a
+        >
+        <a class="no-styles-a" href="https://css.hackclub.com/theme.css"
+          >CSS File</a
+        >
+        <a class="no-styles-a" href="https://css.hackclub.com/fonts.css"
+          >Fonts (HQ-only)</a
+        >
+      </p>
+    </div>
+    <div
+      style="padding-top: var(--spacing-4); padding-bottom: var(--spacing-4)"
+    >
+      <div class="container">
+        <h1 class="headline" style="font-size: var(--font-5)">Containers</h1>
+      </div>
+      <div style="display: grid; grid-gap: var(--spacing-3)">
+        <div
+          class="container"
+          style="
+            border: 2px dashed var(--border);
+            border-radius: var(--radii-default);
+            padding: var(--spacing-3);
+          "
+        >
+          container
+        </div>
+        <div
+          class="container wide"
+          style="
+            border: 2px dashed var(--border);
+            border-radius: var(--radii-default);
+            padding: var(--spacing-3);
+          "
+        >
+          wide
+        </div>
+        <div
+          class="container copy"
+          style="
+            border: 2px dashed var(--border);
+            border-radius: var(--radii-default);
+            padding: var(--spacing-3);
+          "
+        >
+          copy
+        </div>
+        <div
+          class="container narrow"
+          style="
+            border: 2px dashed var(--border);
+            border-radius: var(--radii-default);
+            padding: var(--spacing-3);
+          "
+        >
+          narrow
+        </div>
+      </div>
+      <div class="container" style="margin-top: var(--spacing-5)">
+        <h1
+          class="headline"
+          style="font-size: var(--font-5); margin-top: var(--spacing-4)"
+        >
+          Text
+        </h1>
+        <div class="card">
+          <h3>heading</h3>
+          <h1 class="ultratitle">ultratitle</h1>
+          <h2 class="title">title</h2>
+          <h3 class="subtitle">subtitle</h3>
+          <h3 class="headline">headline</h3>
+          <h4 class="subheadline">subheadline</h4>
+          <h1 class="eyebrow">eyebrow</h1>
+          <h3 class="lead">lead</h3>
+          <h4 class="caption">caption</h4>
+        </div>
+      </div>
+      <div class="container" style="margin-top: var(--spacing-4)">
+        <div class="card" style="font-size: var(--font-3)">
+          <p>
+            This is a whole paragraph of text, include
+            <code style="font-size: var(--font-2)">code like this</code>, as
+            well as
+            <a href="https://hackclub.com/"><code>linked code</code></a> &
+            <a href="https://hackclub.com/">regular links</a>. The paragraph
+            ended up being 1 sentence, but now I guess it’s <b>two</b>.
+          </p>
+          <pre style="font-size: var(--font-2)">
+              Here’s a code block! No highlighting to be found.
+            </pre
+          >
+        </div>
+      </div>
+      <div class="container" style="margin-top: var(--spacing-5)">
+        <h1
+          class="headline"
+          style="font-size: var(--font-5); margin-top: var(--spacing-4)"
+        >
+          Buttons
+        </h1>
+        <button>plain btn</button>
+        <button class="lg">.lg btn</button>
+        <button class="outline">.outline btn</button>
+        <button class="lg outline">.lg .outline btn</button>
+        <button class="cta">.cta btn</button>
+        <button class="lg cta">.lg .cta btn</button>
+      </div>
+      <div class="container" style="margin-top: var(--spacing-5)">
+        <h1
+          class="headline"
+          style="font-size: var(--font-5); margin-top: var(--spacing-4)"
+        >
+          Cards
+        </h1>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: var(--spacing-3);
+          "
+        >
+          <div class="card">.card</div>
+          <div class="card sunken">.card .sunken</div>
+          <div class="card interactive">.card .interactive</div>
+        </div>
+      </div>
+      <div class="container" style="margin-top: var(--spacing-5)">
+        <h1
+          class="headline"
+          style="font-size: var(--font-5); margin-top: var(--spacing-4)"
+        >
+          Forms
+        </h1>
+        <div class="card sunken">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: var(--spacing-3);
+            "
+          >
+            <label>
+              Full name
+              <input placeholder="Zach Latta" />
+            </label>
+            <label>
+              How are you primarily associated with Hack Club?
+              <select>
+                <option value="" disabled hidden>Select one…</option>
+                <option value="club-leader">I lead a club</option>
+                <option value="club-member">I am a club member</option>
+                <option value="slack-member">I am active on Slack</option>
+                <option value="alum">I am a Hack Club alum</option>
+                <option value="none">None of the above</option>
+              </select>
+            </label>
+            <label>
+              Why do you want to come?
+              <textarea placeholder="Write a few sentences..."></textarea>
+            </label>
+          </div>
+          <button style="margin-top: var(--spacing-3); width: 100%">
+            RSVP
+          </button>
+        </div>
+        <div class="container" style="margin-top: var(--spacing-5)">
+          <h1
+            class="headline"
+            style="font-size: var(--font-5); margin-top: var(--spacing-4)"
+          >
+            Badges
+          </h1>
+          <div style="display: flex; gap: var(--spacing-2)">
+            <div class="pill">.pill</div>
+            <div class="outline-badge">.outline-badge</div>
+          </div>
+        </div>
+        <div class="container" style="margin-top: var(--spacing-5)">
+          <h1
+            class="headline"
+            style="font-size: var(--font-5); margin-top: var(--spacing-4)"
+          >
+            Colours
+          </h1>
+          <div class="color-boxes">
+            <div class="color-box" style="background-color: var(--darker)">
+              <p>var(--darker)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--dark)">
+              <p>var(--dark)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--darkless)">
+              <p>var(--darkless)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--black)">
+              <p>var(--black)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--steel)">
+              <p>var(--steel)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--slate)">
+              <p>var(--slate)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--muted)">
+              <p>var(--muted)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--smoke)">
+              <p style="color: var(--darker)">var(--smoke)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--snow)">
+              <p style="color: var(--darker)">var(--snow)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--white)">
+              <p style="color: var(--darker)">var(--white)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--red)">
+              <p>var(--red)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--orange)">
+              <p>var(--orange)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--yellow)">
+              <p>var(--yellow)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--green)">
+              <p>var(--green)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--blue)">
+              <p>var(--blue)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--purple)">
+              <p>var(--purple)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--text)">
+              <p style="color: var(--background)">var(--text)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--elevated)">
+              <p style="color: var(--text)">var(--elevated)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--sheet)">
+              <p style="color: var(--text)">var(--sheet)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--sunken)">
+              <p style="color: var(--text)">var(--sunken)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--border)">
+              <p style="color: var(--text)">var(--border)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--primary)">
+              <p>var(--primary)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--secondary)">
+              <p>var(--secondary)</p>
+            </div>
+            <div class="color-box" style="background-color: var(--accent)">
+              <p>var(--accent)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .color-boxes {
+        font-size: 12px;
+        display: flex;
+        margin-left: -12px;
+        flex-wrap: wrap;
+      }
+      .color-box {
+        width: 128px;
+        height: 128px;
+        margin: 12px;
+        border-radius: 5px;
+        box-shadow: var(--card-shadow);
+      }
+
+      .color-box p {
+        color: #fff;
+        text-align: center;
+        margin-top: 43%;
+      }
+
+      .no-styles-a {
+        color: inherit;
+        text-decoration: none;
+        text-underline-position: under;
+      }
+
+      .no-styles-a:hover {
+        color: var(--primary);
+        text-decoration: none;
+        text-underline-position: under;
+      }
+    </style>
+  </body>
+</html>
