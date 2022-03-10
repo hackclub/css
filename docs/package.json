@@ -1,4 +1,14 @@
 {
+  "name": "@hackclub/css",
+  "version": "0.0.1",
+  "author": "Hack Club",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "next": "^12.1.0",
     "react": "^17.0.2",

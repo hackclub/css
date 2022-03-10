@@ -2,6 +2,29 @@
 
 [Hack Club](https://hackclub.com/)'s [theme](https://theme.hackclub.com) implemented as CSS.
 
+## Development
+
+To run the site locally, follow the steps below:
+
+1. Clone the repository:
+```sh
+git clone https://github.com/hackclub/css.git && cd css/docs/
+```
+
+1. Install dependencies:
+
+```sh
+yarn
+```
+
+1. Start running the dev server:
+
+```sh
+yarn dev
+```
+
+Open your browser to [http://localhost:3000](http://localhost:3000) to see the result!
+
 ## Accessing The Stylesheets
 
 Get the latest theme stylesheet: [`css.hackclub.com/theme.css`](https://css.hackclub.com/theme.css)
@@ -14,15 +37,15 @@ Get the latest minified theme stylesheet: [`css.hackclub.com/theme.min.css`](htt
 
 ### Archives
 
-To access `theme.css` at commit ID `d0888dc` use [`css.hackclub.com/d0888dc/theme.css`](https://css.hackclub.com/d0888dc/theme.css). 
+To access `theme.css` at commit ID `d0888dc` use [`css.hackclub.com/d0888dc/theme.css`](https://css.hackclub.com/d0888dc/theme.css).
 
-Similarly, to access `fonts.min.css` at commit SHA `cbe01ca9a4de7bc7a5b1048d887287dfedba0a07` use [`css.hackclub.com/cbe01ca9a4de7bc7a5b1048d887287dfedba0a07/fonts.min.css`](https://css.hackclub.com/cbe01ca9a4de7bc7a5b1048d887287dfedba0a07/fonts.min.css). 
+Similarly, to access `fonts.min.css` at commit SHA `cbe01ca9a4de7bc7a5b1048d887287dfedba0a07` use [`css.hackclub.com/cbe01ca9a4de7bc7a5b1048d887287dfedba0a07/fonts.min.css`](https://css.hackclub.com/cbe01ca9a4de7bc7a5b1048d887287dfedba0a07/fonts.min.css).
 
 This can be done for every commit in this repository.
 
 ## Usage
 
-The stylesheet places light styling on the following tags: `<button />`, `<input />`, `<textarea />`, `<select />`,  `<label />`, `<h1 />`, `<h2 />`, `<h3 />`, `<h4 />` , `<h5 />`, `<h6 />`, `<p />`, `<img />`, `<hr />`, `<a />`, `<pre />`, `<code />`, `<li />`, `<table />`, `<th />` & `<td />`.
+The stylesheet places light styling on the following tags: `<button />`, `<input />`, `<textarea />`, `<select />`, `<label />`, `<h1 />`, `<h2 />`, `<h3 />`, `<h4 />` , `<h5 />`, `<h6 />`, `<p />`, `<img />`, `<hr />`, `<a />`, `<pre />`, `<code />`, `<li />`, `<table />`, `<th />` & `<td />`.
 
 More opinionated theming is provided by addition classes. CSS variables enable more refined styling by the developer.
 
@@ -30,7 +53,7 @@ More opinionated theming is provided by addition classes. CSS variables enable m
 
 #### Cards
 
-To create a card element use the `.card` class. 
+To create a card element use the `.card` class.
 
 The following modifcations are available:
 
