@@ -1,3 +1,16 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #ffffff;
+    --background: #17171d;
+    --elevated: #252429;
+    --sheet: #252429;
+    --sunken: #121217;
+    --border: #252429;
+    /* --placeholder: #3c4858; */
+    /* --secondary: #8e9297; */
+    /* --muted: #8492a6; */
+  }
+}
 :root {
   --darker: #121217;
   --dark: #17171d;
@@ -85,6 +98,19 @@
   --shadow-elevated: 0 1px 2px rgba(0, 0, 0, 0.0625),
     0 8px 12px rgba(0, 0, 0, 0.125);
 }
+
+/* "dark": {
+  "text": "#ffffff",
+  "background": "#17171d",
+  "elevated": "#252429",
+  "sheet": "#252429",
+  "sunken": "#121217",
+  "border": "#252429",
+  "placeholder": "#3c4858",
+  "secondary": "#8492a6",
+  "muted": "#8492a6",
+  "accent": "#5bc0de"
+} */
 
 body {
   font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont,
@@ -236,7 +262,7 @@ button:hover {
 }
 
 button.lg {
-  font-size: var(--font-3)!important;
+  font-size: var(--font-3) !important;
   line-height: var(--line-height-title);
   padding-left: var(--spacing-4);
   padding-right: var(--spacing-4);
@@ -505,7 +531,6 @@ td {
   vertical-align: top;
   border-bottom-width: 1px;
 }
-
 
 @media screen and (min-width: 32em) {
   .ultratitle {
