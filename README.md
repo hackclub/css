@@ -14,8 +14,10 @@ git clone https://github.com/hackclub/css.git
 2. Start up a server (or open the `index.html` file in your browser):
 
 ```sh
-python -m SimpleHTTPServer && open http://0.0.0.0:8000
+python -m SimpleHTTPServer
 ```
+
+And then visit http://0.0.0.0:8000 to see the site!
 
 ## Accessing The Stylesheets
 
