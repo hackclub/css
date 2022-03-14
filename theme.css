@@ -428,6 +428,7 @@ a {
 a:focus,
 a:hover {
   text-decoration-style: wavy;
+  text-decoration-skip-ink: none;
 }
 
 pre {
