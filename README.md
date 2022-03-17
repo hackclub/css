@@ -2,6 +2,21 @@
 
 [Hack Club](https://hackclub.com/)'s [theme](https://theme.hackclub.com) implemented as CSS.
 
+## Getting Started with Hack Club CSS
+
+1. Create a new folder for your site
+2. Add a `style.css` file inside your folder
+3. Add an `index.html` page inside your folder
+4. Link to the CSS files in the `<head>` tag of your HTML:
+ ```html
+ <link rel="stylesheet" href="https://css.hackclub.com/theme.css">
+ <link rel="stylesheet" href="https://css.hackclub.com/fonts.css"> <!-- HQ-only. -->
+ ```
+5. View https://theme.hackclub.com/ for a visual representation of our theme
+6. View https://github.com/hackclub/css#usage for the documentation of the tags in our theme
+7. Run your static site locally with `python -m SimpleHTTPServer` and view it at `http://localhost:8000/`
+8. Have fun and get creative making websites!
+
 ## Development
 
 To run the site locally, follow the steps below:
