@@ -102,7 +102,7 @@ The CSS vars made available are as follows:
 
 #### Colours
 
-```
+```css
 --darker: #121217;
 --dark: #17171d;
 --darkless: #252429;
@@ -136,7 +136,7 @@ The CSS vars made available are as follows:
 
 #### Breakpoints
 
-```
+```css
 --breakpoint-xs: 32em;
 --breakpoint-s: 48em;
 --breakpoint-m: 64em;
@@ -146,7 +146,7 @@ The CSS vars made available are as follows:
 
 #### Spacing
 
-```
+```css
 --spacing-0: 0px;
 --spacing-1: 4px;
 --spacing-2: 8px;
@@ -160,7 +160,7 @@ The CSS vars made available are as follows:
 
 #### Font Sizes
 
-```
+```css
 --font-1: 12px;
 --font-2: 16px;
 --font-3: 20px;
@@ -176,7 +176,7 @@ The CSS vars made available are as follows:
 
 #### Line Heights
 
-```
+```css
 --line-height-limit: 0.875;
 --line-height-title: 1;
 --line-height-heading: 1.125;
@@ -187,7 +187,7 @@ The CSS vars made available are as follows:
 
 #### Font Weights
 
-```
+```css
 --font-weight-body: 400;
 --font-weight-bold: 700;
 --font-weight-heading: var(--font-weight-bold);
@@ -195,14 +195,14 @@ The CSS vars made available are as follows:
 
 ### Letter Spacing
 
-```
+```css
 --letter-spacing-title: -0.009em;
 --letter-spacing-headline: 0.009em;
 ```
 
 #### Box Sizes (Widths)
 
-```
+```css
 --size-wide-plus: 2048px;
 --size-wide: 1536px;
 --size-layout-plus: 1200px;
@@ -216,7 +216,7 @@ The CSS vars made available are as follows:
 
 ### Border Radii
 
-```
+```css
 --radii-small: 4px;
 --radii-default: 8px;
 --radii-extra: 12px;
@@ -226,7 +226,7 @@ The CSS vars made available are as follows:
 
 #### Shadows
 
-```
+```css
 --shadow-text: 0 1px 2px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.125);
 --shadow-small: 0 1px 2px rgba(0, 0, 0, 0.0625),
   0 2px 4px rgba(0, 0, 0, 0.0625);
