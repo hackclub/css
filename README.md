@@ -1,6 +1,8 @@
 # Hack Club CSS
 
 [Hack Club](https://hackclub.com/)'s [theme](https://theme.hackclub.com) implemented as CSS.
+- Use our [css-starter](https://github.com/hackclub/css-starter) for a blank but ready website template that already includes our theme CSS.
+- View the [contribute](https://github.com/hackclub/contribute) repository for an example of our CSS theme [in action](https://contribute.hackclub.com/).
 
 ## Getting Started with Hack Club CSS
 
