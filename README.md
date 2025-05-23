@@ -31,7 +31,8 @@ git clone https://github.com/hackclub/css.git
 2. Start up a server (or open the `index.html` file in your browser):
 
 ```sh
-python -m SimpleHTTPServer
+python -m SimpleHTTPServer #Python 2
+python3 -m http.server #Python 3
 ```
 
 And then visit http://0.0.0.0:8000 to see the site!

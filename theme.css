@@ -198,7 +198,7 @@
     font-weight: var(--font-weight-body);
   }
   
-  button {
+button {
     cursor: pointer;
     font-family: inherit;
     font-weight: var(--font-weight-bold);
@@ -209,7 +209,9 @@
     box-shadow: var(--shadow-card);
     letter-spacing: var(--letter-spacing-headline);
     -webkit-tap-highlight-color: transparent;
-    transition: transform 0.125s ease-in-out, box-shadow 0.125s ease-in-out;
+    transition: transform 0.25s cubic-bezier(0.34, 1.64, 0.64, 1),
+      box-shadow 0.25s cubic-bezier(0.34, 1.64, 0.64, 1);
+    transform: none;
     box-sizing: border-box;
     margin: 0;
     min-width: 0;
@@ -229,11 +231,28 @@
     border: 0;
     font-size: var(--font-2);
   }
-  
+
   button:focus,
   button:hover {
     box-shadow: var(--shadow-elevated);
+  }
+
+  button:hover {
     transform: scale(1.0625);
+  }
+
+  button:active {
+    transform: scale(1.015);
+  }
+  
+  @media (hover: none) {
+    button:hover {
+      transform: none;
+    }
+    
+    button:active {
+      transform: scale(0.95);
+    }
   }
   
   button.lg {
@@ -276,13 +295,29 @@
   .card.interactive {
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
-    transition: transform 0.125s ease-in-out, box-shadow 0.125s ease-in-out;
+    transition: transform 0.25s cubic-bezier(0.34, 1.64, 0.64, 1),
+      box-shadow 0.25s cubic-bezier(0.34, 1.64, 0.64, 1);
+    transform: none;
+    box-shadow: var(--shadow-card);
   }
-  
+
   .card.interactive:hover,
   .card.interactive:focus {
     transform: scale(1.0625);
     box-shadow: var(--shadow-elevated);
+  }
+
+  .card.interactive:active {
+    transform: scale(1.015);
+  }
+
+  @media (hover: none) {
+    .card.interactive:hover {
+      transform: none;
+    }
+    .card.interactive:active {
+      transform: scale(0.95);
+    }
   }
   
   input,
